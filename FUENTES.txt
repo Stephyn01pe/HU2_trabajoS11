@@ -1,0 +1,7 @@
+AquaSteps
+Iconos Facebook, Instagram y YouTube: Simple Icons v15 (CDN jsDelivr).
+https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/
+https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+Las marcas pertenecen a sus titulares; no implican afiliación.
+Favicon, gota e ilustraciones: SVG originales para este proyecto.
+Los enlaces de redes sociales llevan a páginas generales; reemplazar por las del proyecto.

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pérdidas | AquaSteps</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html"><img src="iconos/favicon.svg" alt="" width="42" height="42">AquaSteps</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <details class="desplegable">
+            <summary>Consultar</summary>
+            <ul class="submenu">
+              <li><a href="alertas.html">Alertas</a></li>
+              <li><a href="perdidas.html" aria-current="page">Pérdidas de agua</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section class="seccion contenedor" aria-labelledby="titulo">
+    <a class="enlace regresar" href="index.html">← Regresar</a>
+    <p class="etiqueta">Consumo</p>
+    <h1 id="titulo">Pérdidas</h1>
+    <h2><span id="fecha-actual"></span></h2>
+    <div class="tabla-caja">
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Pérdida</th>
+            <th>Costo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>52 ml</td>
+            <td>0,25 soles</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="seccion fondo">
+    <div class="contenedor dos-columnas informe">
+      <article class="tarjeta">
+        <h2>Informe de hoy</h2>
+        <div class="cifras">
+          <div class="cifra"><strong>52 ml</strong><span>Pérdida total</span></div>
+          <div class="cifra"><strong>0,25 soles</strong><span>Costo total</span></div>
+          <div class="cifra"><strong>2</strong><span>Alertas activas</span></div>
+        </div>
+        <p><b>Pérdida por lugar</b></p>
+        <ul class="barras" aria-label="Porcentaje de la pérdida por lugar">
+          <li>Cocina<span class="barra-fondo"><span class="barra-valor alta" style="width: 62%"></span></span><b>62%</b></li>
+          <li>Baño<span class="barra-fondo"><span class="barra-valor" style="width: 38%"></span></span><b>38%</b></li>
+        </ul>
+        <p class="nota">Cocina: 32 ml · Baño: 20 ml. Datos de ejemplo.</p>
+      </article>
+      <article class="tarjeta">
+        <h2>Acciones recomendadas</h2>
+        <ol class="acciones">
+          <li><b>Revisa el caño de la cocina.</b> Es donde más se pierde; cambia el empaque si gotea.</li>
+          <li><b>Prueba el tanque del baño.</b> Echa unas gotas de colorante y, si el color llega a la taza sin jalar la palanca, hay fuga.</li>
+          <li><b>Cierra bien las llaves</b> después de cada uso, sin forzarlas.</li>
+          <li><b>Vuelve a medir mañana</b> para confirmar que la pérdida bajó.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>AquaSteps</strong> · Monitoreo de alertas y pérdidas de agua</p>
+    <nav class="redes" aria-label="Redes sociales de referencia">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.svg" alt="" width="24" height="24">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.svg" alt="" width="24" height="24">Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/youtube.svg" alt="" width="24" height="24">YouTube</a>
+    </nav>
+    <p>© 2026 AquaSteps · <a href="FUENTES.txt">Créditos de recursos</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

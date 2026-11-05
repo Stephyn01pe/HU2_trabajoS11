@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alertas | AquaSteps</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html"><img src="iconos/favicon.svg" alt="" width="42" height="42">AquaSteps</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <details class="desplegable">
+            <summary>Consultar</summary>
+            <ul class="submenu">
+              <li><a href="alertas.html" aria-current="page">Alertas</a></li>
+              <li><a href="perdidas.html">Pérdidas de agua</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section class="seccion contenedor" aria-labelledby="titulo">
+    <a class="enlace regresar" href="index.html">← Regresar</a>
+    <p class="etiqueta">Avisos</p>
+    <h1 id="titulo">Alertas</h1>
+    <div class="dos-columnas lugares">
+      <article class="lugar">
+        <a class="pin" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"><img src="iconos/ubicacion.svg" alt="Ver Cocina en Google Maps" width="38" height="38"></a>
+        <div class="tarjeta">
+          <dl class="datos">
+            <div><dt>Lugar</dt><dd>Cocina</dd></div>
+            <div><dt>Cantidad perdida</dt><dd>32 ml</dd></div>
+            <div><dt>Costo</dt><dd>0,15 soles</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="lugar">
+        <a class="pin" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"><img src="iconos/ubicacion.svg" alt="Ver Baño en Google Maps" width="38" height="38"></a>
+        <div class="tarjeta">
+          <dl class="datos">
+            <div><dt>Lugar</dt><dd>Baño</dd></div>
+            <div><dt>Cantidad perdida</dt><dd>20 ml</dd></div>
+            <div><dt>Costo</dt><dd>0,10 soles</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>AquaSteps</strong> · Monitoreo de alertas y pérdidas de agua</p>
+    <nav class="redes" aria-label="Redes sociales de referencia">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.svg" alt="" width="24" height="24">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.svg" alt="" width="24" height="24">Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/youtube.svg" alt="" width="24" height="24">YouTube</a>
+    </nav>
+    <p>© 2026 AquaSteps · <a href="FUENTES.txt">Créditos de recursos</a></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | AquaSteps</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg" />
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+      <div class="contenedor barra">
+        <a class="marca" href="index.html"
+          ><img
+            src="iconos/favicon.svg"
+            alt=""
+            width="42"
+            height="42"
+          />AquaSteps</a
+        >
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li>
+              <details class="desplegable">
+                <summary>Consultar</summary>
+                <ul class="submenu">
+                  <li><a href="alertas.html">Alertas</a></li>
+                  <li><a href="perdidas.html">Pérdidas de agua</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <!-- 1. Vinculación del script JS en la cabecera (<head>) con el atributo defer -->
+      <!-- Defer permite que el HTML se procese por completo antes de ejecutar el script -->
+      <script src="js/script.js" defer></script>
+
+      <!-- 2. Sección del apartado climático a insertar dentro de <main> -->
+      <section id="clima-section" class="clima-container">
+        <div class="clima-card">
+          <h2>Condiciones Climáticas y Preservación de Agua</h2>
+          <p class="clima-descripcion">
+            Selecciona tu ubicación para evaluar los riesgos climáticos que
+            pueden afectar tus tuberías y el suministro de agua potable.
+          </p>
+
+          <!-- Formulario / Control de Selección -->
+          <div class="clima-selector-group">
+            <label for="ubicacion-select"
+              >Selecciona tu ubicación / zona:</label
+            >
+            <select id="ubicacion-select" class="clima-select">
+              <option value="" disabled selected>
+                -- Selecciona una zona --
+              </option>
+              <option value="lima-centro">
+                Lima Centro (Templado / Húmedo)
+              </option>
+              <option value="lima-este">
+                Lima Este / Chosica (Lluvias intensas / Riesgo de huayco)
+              </option>
+              <option value="puno-altiplano">
+                Puno / Zona Altoandina (Heladas / Congelamiento)
+              </option>
+              <option value="piura-norte">
+                Piura / Norte (Ola de calor / Sequía)
+              </option>
+            </select>
+          </div>
+
+          <!-- Panel de Resultados (Oculto al inicio) -->
+          <div id="clima-resultado" class="clima-resultado hidden">
+            <!-- Criterio 1: Identificación del clima -->
+            <div class="clima-info-header">
+              <span class="clima-label">Clima identificado:</span>
+              <span id="clima-estado-texto" class="clima-valor">--</span>
+            </div>
+
+            <!-- Criterio 2: Notificación del impacto o riesgo -->
+            <div id="clima-alerta-box" class="alerta-box">
+              <h3 id="alerta-titulo">--</h3>
+              <p id="alerta-mensaje">--</p>
+            </div>
+
+            <!-- Criterio 3: Acciones a realizar por el usuario -->
+            <div class="acciones-box">
+              <h3>Acciones recomendadas para proteger tu hogar:</h3>
+              <ul id="lista-acciones" class="lista-acciones">
+                <!-- Las acciones se insertarán dinámicamente desde JavaScript -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="inicio"
+        class="hero contenedor dos-columnas"
+        aria-labelledby="titulo"
+      >
+        <div>
+          <p class="etiqueta">Control del agua</p>
+          <h1 id="titulo">AquaSteps</h1>
+          <div class="alerta" role="alert">¡ALERTA!</div>
+          <div class="fecha avisos">
+            La fecha de hoy es: <span id="fecha-actual"></span>
+          </div>
+        </div>
+        <figure class="postal">
+          <img
+            class="ilustracion"
+            src="imagenes/gota.svg"
+            alt="Ilustración de una gota de agua"
+            width="400"
+            height="300"
+          />
+        </figure>
+      </section>
+      <section class="seccion fondo">
+        <div class="contenedor dos-columnas">
+          <article class="tarjeta acceso">
+            <a class="boton" href="alertas.html">Ver alertas</a>
+            <img src="iconos/gota.svg" alt="" width="48" height="48" />
+          </article>
+          <article class="tarjeta acceso">
+            <a class="boton" href="perdidas.html">Ver pérdidas de agua</a>
+            <img src="iconos/gota.svg" alt="" width="48" height="48" />
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="pie">
+      <div class="contenedor">
+        <p>
+          <strong>AquaSteps</strong> · Monitoreo de alertas y pérdidas de agua
+        </p>
+        <nav class="redes" aria-label="Redes sociales de referencia">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="iconos/facebook.svg"
+              alt=""
+              width="24"
+              height="24"
+            />Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="iconos/instagram.svg"
+              alt=""
+              width="24"
+              height="24"
+            />Instagram</a
+          >
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="iconos/youtube.svg"
+              alt=""
+              width="24"
+              height="24"
+            />YouTube</a
+          >
+        </nav>
+        <p>© 2026 AquaSteps · <a href="FUENTES.txt">Créditos de recursos</a></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
